@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>
+        Resume Builder
+        
+
+</title>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<style>
+.fill{
+        font-size: 30px;
+        color: #072fe2;
+    }
+    
+    
+    
+        input[type=text], select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+
+        
+
+    }
+ body  {
+        background-image: url("static/img/re.jpg");
+    
+    
+    }
+input[type=email], select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+input[type=submit] {
+    width: 70%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+    </style>
+    <body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <center><b><b class="fill">Fill your details:</b></b></center>
+            </div>
+        </div>
+    </div>
+    <hr>
+        <div class="container">
+            <div class="row">
+                 <div class="col-xs-12">
+                     <form method="post" action="{{ url_for('hello') }}">
+                      <label for="yourname">Full Name:</label>
+                      <input type="text" name="yourname"  required /><br />
+               <label for="youremail">E-mail:</label>
+                      <input type="email" name="youremail" placeholder="ex: exmaple@something.com" required /><br />
+                      <label for="youremail">Contact:</label>
+                      <input type="text" name="contact"  required /><br />
+            <label for="youremail">Father's Name</label>
+                      <input type="text" name="fathername"  required /><br />
+                <label for="youremail">Complete address:</label>
+                      <input type="text" name="address"   required /><br />
+            <label for="youremail">Residance contact:</label>
+                      <input type="text" name="residance"  required /><br />
+                <label for="youremail">Date of birth:</label>
+                      <input type="text" name="dob" placeholder="ex: D/M/Y" required /><br />
+                <label for="youremail">Languages known:</label>
+                      <input type="text" name="lang"  required /><br />
+                <label for="youremail">Graduation College name:</label>
+                      <input type="text" name="gb"  required /><br />
+                <label for="youremail">Graduation subjects or stream:</label>
+                      <input type="text" name="gs"  required /><br />
+                <label for="youremail">Graduation passing year:</label>
+                      <input type="text" name="gp"  required /><br />
+                <label for="youremail">Garduation marks in % or CGPA:</label>
+                      <input type="text" name="gm"  required /><br />
+    
+                <label for="youremail">10th BOARD name:</label>
+                      <input type="text" name="tb"  required /><br />
+                <label for="youremail">10th subjects:</label>
+                      <input type="text" name="ts"  required /><br />
+                <label for="youremail">10th passing year</label>
+                      <input type="text" name="tp"  required /><br />
+                <label for="youremail">10th marks in % or CGPA:</label>
+                      <input type="text" name="tm"  required /><br />
+                <label for="youremail">12th BOARD name:</label>
+                      <input type="text" name="tvb"  required /><br />
+                <label for="youremail">12th stream:</label>
+                      <input type="text" name="tvs"  required /><br />
+                <label for="youremail">12th passing year</label>
+                      <input type="text" name="tvp"   required /><br />
+                <label for="youremail">12th marks in %:</label>
+                      <input type="text" name="tvm"  required /><br />
+                <label for="youremail">Your projetcs in detail:</label>
+                      <input type="text" name="projects" placeholder="Your complete project details" required /><br />
+                <label for="youremail">Your Skills:</label>
+                      <input type="text" name="skills"  required /><br />
+                <label for="youremail">Your achievements:</label>
+                      <input type="text" name="achievements"  required /><br />
+                      <center><input type="submit" /></center>
+                    </form>
+                 </div>
+            </div>
+        </div>
+    
+    </body>   
+    
+            
+            
+    
+
+</html>
